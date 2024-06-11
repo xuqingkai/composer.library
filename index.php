@@ -3,5 +3,9 @@ include_once('vendor/autoload.php');
 use app\Index;
 
 $result = Index::index();
-exit(json_encode($result));
+if(gettype($result)=='array' || gettype($result)=='object'){
+    exit(json_encode($result, JSON_UNESCAPED_UNICODE));
+}else{
+    exit($result);
+}
 ?>
