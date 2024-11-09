@@ -1,10 +1,28 @@
 {
+    "name": "xuqingkai/php",
+    "description": "xuqingkai",
+    "type": "project",
+    "homepage": "https://github.com/xuqingkai",
+    "keywords": [
+        "xuqingkai"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "xuqingkai",
+            "email": "xuqingkai@github.com",
+            "homepage": "https://github.com/xuqingkai",
+            "role": "developer"
+        }
+    ],
     "require": {
-        "php": ">=7.1.0"
+        "php": ">=7.0.0"
     },
     "autoload": {
         "psr-4": {
-            "app\\": "src/app"
-        }
-    }
+            "xuqingkai\\": ["src/xuqingkai/"]
+        },
+        "files": [""]
+    },
+    "minimum-stability": "stable"
 }
