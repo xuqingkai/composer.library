@@ -1,7 +1,7 @@
 <?php
 namespace xuqingkai;
 
-class Index
+class Demo
 {
     public static function index(){
         return Test::demo();
