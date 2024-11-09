@@ -3,24 +3,23 @@ namespace xuqingkai\pay
 
 class Alipay{
   
-  protected $alipay;
+  protected $alipay=[];
   
   public function __construct($config=[]){
     $this->config($config);
   }
-  public function config(){
-    return $this->alipay;
-  }
-  public function config($data){
-    if(is_array($data)){
-      $this->alipay=array_merge($this->alipay, $data);
-      return $data;
+  public function config($key=null, $value=null){
+    if(is_null($key)){
+      return $this->alipay;
+    }elseif(is_array($key)){
+      $this->alipay=array_merge($this->alipay, $key);
+      return $key;
+    }elseif(is_null($value)){
+      return $this->alipay[$key];
     }else{
-      return $this->alipay[$data];
+      $this->alipay[$key]=$value;
+      return $value;
     }
-  }
-  public function config($key, $value){
-    $this->alipay[$key]=$value;
   }
   public function pc(){
     return 'http://www.xuqingkai.com/pay/pc';
