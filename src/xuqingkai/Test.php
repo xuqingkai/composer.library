@@ -3,7 +3,7 @@ namespace xuqingkai;
 
 class Test
 {
-    public static function demo(){
-        return "在Index中调用Test的demo方法";
+    public static function show(){
+        return "去Demo中调用Test的show方法";
     }
 }
