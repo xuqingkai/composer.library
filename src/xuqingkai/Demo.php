@@ -4,6 +4,6 @@ namespace xuqingkai;
 class Demo
 {
     public static function index(){
-        return Test::demo();
+        return Test::show();
     }
 }
