@@ -1,4 +1,4 @@
-# composer.vendor
+# php.library
 
 - 自动载入本地文件：src/app目录下的所有文件都归到app命名空间下
 ```
