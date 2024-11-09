@@ -1,7 +1,7 @@
 {
     "name": "xuqingkai/php",
     "description": "xuqingkai",
-    "type": "project",
+    "type": "library",
     "homepage": "https://github.com/xuqingkai",
     "keywords": [
         "xuqingkai"
