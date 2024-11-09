@@ -9,16 +9,17 @@ class Alipay{
     $this->config($config);
   }
   public function config($key=null, $value=null){
-    if(is_null($key)){
+    $arg = func_get_args();
+    if(count($arg)==0){
       return $this->alipay;
-    }elseif(is_array($key)){
-      $this->alipay=array_merge($this->alipay, $key);
-      return $key;
-    }elseif(is_null($value)){
-      return $this->alipay[$key];
+    }elseif(is_array($arg[0])){
+      $this->alipay=array_merge($this->alipay, $arg[0]);
+      return $arg[0];
+    }elseif(count($arg)==1){
+      return $this->alipay[$arg[0]];
     }else{
-      $this->alipay[$key]=$value;
-      return $value;
+      $this->alipay[$arg[0]]=$arg[1];
+      return $arg[1];
     }
   }
   public function pc(){
