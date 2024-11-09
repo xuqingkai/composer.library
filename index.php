@@ -1,6 +1,6 @@
 <?php
 include_once('vendor/autoload.php');
-use app\Index;
+use xuqingkai\Index;
 
 $result = Index::index();
 if(gettype($result)=='array' || gettype($result)=='object'){
