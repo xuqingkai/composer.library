@@ -8,7 +8,7 @@ class Alipay{
   public function __construct($config=[]){
     $this->config($config);
   }
-  public function config($key=null, $value=null){
+  public function config(){
     $arg = func_get_args();
     if(count($arg)==0){
       return $this->alipay;
