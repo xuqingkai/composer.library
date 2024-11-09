@@ -3,13 +3,13 @@ namespace xuqingkai\pay
 
 class Alipay{
   
-  protected $config;
+  protected $alipay;
   
   public function __construct($config=[]){
     $this->config($config);
   }
   public function config($value){
-    $this->config=array_merge($this->config, $value);
+    $this->alipay=array_merge($this->alipay, $value);
   }
   public function pc(){
     
