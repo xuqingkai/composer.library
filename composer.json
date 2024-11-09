@@ -22,7 +22,7 @@
         "psr-4": {
             "xuqingkai\\": ["src/"]
         },
-        "files": [""]
+        "files": []
     },
     "minimum-stability": "stable"
 }
