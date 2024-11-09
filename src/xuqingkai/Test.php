@@ -1,5 +1,5 @@
 <?php
-namespace app;
+namespace xuqingkai;
 
 class Test
 {
